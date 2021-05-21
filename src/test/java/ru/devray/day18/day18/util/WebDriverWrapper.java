@@ -32,7 +32,7 @@ public class WebDriverWrapper {
 
         System.setProperty("webdriver.chrome.driver", "bin\\chromedriver.exe");
         this.driver = new ChromeDriver(options);
-
+        Logger log = LogManager.getRootLogger();
         //Альтернативно - вариант для работы с Selenium Grid и подключением к Selenium Grid Hub
         //Сервисы node & hub должны быть запущены!
         //try {
